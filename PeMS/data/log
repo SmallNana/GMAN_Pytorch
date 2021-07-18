@@ -1,0 +1,103 @@
+K=8, L=3, SE_file='./data/SE(PeMS).txt', batch_size=32, d=8, decay_epoch=10, learning_rate=0.001, log_file='./data/log', max_epoch=100, model_file='./data/GMAN.pkl', num_his=12, num_pred=12, patience=10, test_ratio=0.2, time_slot=5, traffic_file='./data/pems-bay.h5', train_ratio=0.7, val_ratio=0.1
+loading data...
+trainX: torch.Size([36458, 12, 325])		 trainY: torch.Size([36458, 12, 325])
+valX:   torch.Size([5189, 12, 325])		valY:   torch.Size([5189, 12, 325])
+testX:   torch.Size([10400, 12, 325])		testY:   torch.Size([10400, 12, 325])
+mean:   62.7354		std:   9.4388
+data loaded!
+compiling model...
+trainable parameters: 513,795
+GPU使用情况:2.33216
+**** training model ****
+2021-07-17 16:34:05 | epoch: 0001/100, training time: 1225.7s, inference time: 29.0s
+train loss: 2.1606, val_loss: 1.9417
+val loss decrease from inf to 1.9417, saving model to ./data/GMAN.pkl
+2021-07-17 16:54:59 | epoch: 0002/100, training time: 1224.0s, inference time: 28.9s
+train loss: 1.8647, val_loss: 1.8415
+val loss decrease from 1.9417 to 1.8415, saving model to ./data/GMAN.pkl
+2021-07-17 17:15:52 | epoch: 0003/100, training time: 1223.4s, inference time: 28.9s
+train loss: 1.7676, val_loss: 1.7029
+val loss decrease from 1.8415 to 1.7029, saving model to ./data/GMAN.pkl
+2021-07-17 17:36:42 | epoch: 0004/100, training time: 1221.1s, inference time: 28.9s
+train loss: 1.7238, val_loss: 1.6520
+val loss decrease from 1.7029 to 1.6520, saving model to ./data/GMAN.pkl
+2021-07-17 17:57:33 | epoch: 0005/100, training time: 1220.9s, inference time: 29.0s
+train loss: 1.6902, val_loss: 1.6462
+val loss decrease from 1.6520 to 1.6462, saving model to ./data/GMAN.pkl
+2021-07-17 18:18:23 | epoch: 0006/100, training time: 1220.8s, inference time: 29.0s
+train loss: 1.6717, val_loss: 1.6102
+val loss decrease from 1.6462 to 1.6102, saving model to ./data/GMAN.pkl
+2021-07-17 18:39:14 | epoch: 0007/100, training time: 1221.4s, inference time: 29.0s
+train loss: 1.6554, val_loss: 1.6128
+2021-07-17 19:00:09 | epoch: 0008/100, training time: 1226.0s, inference time: 29.0s
+train loss: 1.6291, val_loss: 1.6667
+2021-07-17 19:21:03 | epoch: 0009/100, training time: 1224.2s, inference time: 28.9s
+train loss: 1.6228, val_loss: 1.7310
+2021-07-17 19:41:58 | epoch: 0010/100, training time: 1225.8s, inference time: 28.9s
+train loss: 1.6145, val_loss: 1.6111
+2021-07-17 20:02:57 | epoch: 0011/100, training time: 1228.8s, inference time: 28.9s
+train loss: 1.5718, val_loss: 1.6194
+2021-07-17 20:23:53 | epoch: 0012/100, training time: 1227.2s, inference time: 29.0s
+train loss: 1.5763, val_loss: 1.6399
+2021-07-17 20:44:48 | epoch: 0013/100, training time: 1225.3s, inference time: 28.9s
+train loss: 1.5715, val_loss: 1.5790
+val loss decrease from 1.6102 to 1.5790, saving model to ./data/GMAN.pkl
+2021-07-17 21:05:43 | epoch: 0014/100, training time: 1226.0s, inference time: 28.9s
+train loss: 1.5575, val_loss: 1.6224
+2021-07-17 21:26:40 | epoch: 0015/100, training time: 1226.7s, inference time: 28.9s
+train loss: 1.5470, val_loss: 1.5952
+2021-07-17 21:47:39 | epoch: 0016/100, training time: 1230.2s, inference time: 29.0s
+train loss: 1.5592, val_loss: 1.5851
+2021-07-17 22:08:40 | epoch: 0017/100, training time: 1231.3s, inference time: 28.9s
+train loss: 1.5376, val_loss: 1.5890
+2021-07-17 22:29:42 | epoch: 0018/100, training time: 1232.2s, inference time: 28.9s
+train loss: 1.5282, val_loss: 1.6165
+2021-07-17 22:50:41 | epoch: 0019/100, training time: 1230.3s, inference time: 29.0s
+train loss: 1.5127, val_loss: 1.5698
+val loss decrease from 1.5790 to 1.5698, saving model to ./data/GMAN.pkl
+2021-07-17 23:11:49 | epoch: 0020/100, training time: 1238.1s, inference time: 28.9s
+train loss: 1.5129, val_loss: 1.6029
+2021-07-17 23:32:53 | epoch: 0021/100, training time: 1235.1s, inference time: 28.9s
+train loss: 1.5033, val_loss: 1.5729
+2021-07-17 23:53:54 | epoch: 0022/100, training time: 1231.5s, inference time: 28.9s
+train loss: 1.4827, val_loss: 1.6278
+2021-07-18 00:14:45 | epoch: 0023/100, training time: 1221.1s, inference time: 29.0s
+train loss: 1.5000, val_loss: 1.5816
+2021-07-18 00:35:34 | epoch: 0024/100, training time: 1219.5s, inference time: 28.9s
+train loss: 1.5001, val_loss: 1.6361
+2021-07-18 00:56:25 | epoch: 0025/100, training time: 1221.8s, inference time: 29.0s
+train loss: 1.4999, val_loss: 1.6111
+2021-07-18 01:17:15 | epoch: 0026/100, training time: 1220.4s, inference time: 28.9s
+train loss: 1.4735, val_loss: 1.7603
+2021-07-18 01:37:59 | epoch: 0027/100, training time: 1214.6s, inference time: 29.0s
+train loss: 1.4715, val_loss: 1.6026
+2021-07-18 01:58:45 | epoch: 0028/100, training time: 1216.2s, inference time: 29.0s
+train loss: 1.4829, val_loss: 1.5811
+2021-07-18 02:19:30 | epoch: 0029/100, training time: 1215.9s, inference time: 28.9s
+train loss: 1.4597, val_loss: 1.6582
+early stop at epoch: 0029
+Training and validation are completed, and model has been stored as ./data/GMAN.pkl
+**** testing model ****
+loading model from ./data/GMAN.pkl
+model restored!
+evaluating...
+testing time: 58.5s
+                MAE		RMSE		MAPE
+train            1.30		4.18		2.73%
+val              1.66		5.37		3.77%
+test             1.66		4.85		3.73%
+performance in each prediction step
+step: 01         1.14		9.59		3.04%
+step: 02         1.28		5.56		2.84%
+step: 03         1.41		3.08		2.96%
+step: 04         1.54		3.37		3.30%
+step: 05         1.64		3.66		3.57%
+step: 06         1.71		3.88		3.78%
+step: 07         1.78		4.04		3.95%
+step: 08         1.82		4.16		4.08%
+step: 09         1.87		4.26		4.19%
+step: 10         1.90		4.34		4.29%
+step: 11         1.93		4.41		4.37%
+step: 12         1.96		4.46		4.44%
+average:         1.66		4.57		3.73%
+total time: 611.4min
